@@ -43,7 +43,11 @@ AI101-ML-Assignment/
 - Matplotlib
 - Seaborn
 - Scikit-learn
+## B3: Clothing Review Ratings
 
+- Notebook: [B3 notebook](B3/B3_notebook.ipynb)
+- Report: [B3 report](B3/report/70177771_B3_Report.pdf)
+- Dataset instructions: [B3 dataset README](B3/data/README.md)
 ## Author
 Student Name: Muhammad.Zain-ull-Abideen
 Roll Number: 701 77 77 1
