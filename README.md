@@ -1,25 +1,42 @@
-
 # AI101 - Machine Learning Assignment
 
-This repository contains the machine learning coursework for the AI101 assignment.
+This repository contains my AI101 machine learning assignment work. Each task has its own folder with its notebook, report, figures, and data instructions.
 
-## Task A1 - Breast Cancer Diagnosis
+## Student
 
-The first task focuses on classifying breast tumors as benign or malignant using machine learning.
+- **Name:** Muhammad Zain-ul-Abideen
+- **Roll Number:** 70177771
+- **Section:** B
 
-### Models Used
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Random Forest
+## Tasks Attempted
 
-### Techniques
-- Exploratory Data Analysis
-- Data Preprocessing and Feature Scaling
-- Hyperparameter Tuning
-- Stratified 5-Fold Cross-Validation
-- Model Evaluation
-- Threshold Analysis
-- Feature Importance and Selection
+### A1 - Breast Cancer Diagnosis
+
+This task classifies breast tumors as benign or malignant using machine learning.
+
+**Models:** Logistic Regression, Support Vector Machine (SVM), and Random Forest.
+
+**Techniques:** Exploratory Data Analysis, preprocessing and feature scaling, hyperparameter tuning, stratified 5-fold cross-validation, model evaluation, threshold analysis, and feature importance.
+
+### B3 - Clothing Review Ratings
+
+This task predicts clothing review ratings from review text and customer and product information. The five-class task predicts ratings from 1 to 5. The three-class task groups ratings as Negative (1-2), Neutral (3), and Positive (4-5).
+
+**Models:** Logistic Regression, Linear SVM, Random Forest and LightGBM, compared with and without balanced class weights.
+
+**Features:** TF-IDF review text, age, log positive-feedback count, review length, and product categories. `Recommended IND` was excluded to prevent data leakage.
+
+**Selected model:** LightGBM with balanced class weights, selected using validation Macro-F1.
+
+**Five-class test results:** Accuracy 60.55%, Macro-F1 43.90%, Weighted-F1 61.24%, Ordinal MAE 0.5013.
+
+**Three-class test results:** Accuracy 79.45%, Macro-F1 61.44%, Weighted-F1 80.74%.
+
+- [B3 notebook](B3/B3_notebook.ipynb)
+- [B3 report](B3/report/70177771_B3_Report.pdf)
+- [B3 dataset instructions](B3/data/README.md)
+
+The B3 dataset CSV is not included in this repository. See the dataset instructions for how to obtain it.
 
 ## Repository Structure
 
@@ -46,19 +63,20 @@ AI101-ML-Assignment-70177771/
 ├── AI_DISCLOSURE.md
 └── .gitignore
 ```
+
 ## Technologies Used
+
 - Python
 - NumPy
 - Pandas
 - Matplotlib
 - Seaborn
 - Scikit-learn
-  
-## B3: Clothing Review Ratings
+- LightGBM
+```
 
-- Notebook: [B3 notebook](B3/B3_notebook.ipynb)
-- Report: [B3 report](B3/report/70177771_B3_Report.pdf)
-- Dataset instructions: [B3 dataset README](B3/data/README.md)
-## Author
-Student Name: Muhammad.Zain-ull-Abideen
-Roll Number: 701 77 77 1
+Commit summary:
+
+```text
+Update README with A1 and B3 details
+```
