@@ -16,3 +16,6 @@ The student performed the notebook experiments, executed the machine learning mo
 
 ## Verification
 All reported results and technical content should be checked against the executed notebook before final submission. The student is responsible for the final submitted work.
+## B3
+
+ChatGPT (OpenAI, accessed through Codex) helped debug the three-class LightGBM notebook cell and improve report wording. AI-assisted parts include that notebook cell and report Sections 8, 10, and 11. I checked the reported metrics against the notebook run output supplied for this update. I take responsibility for verifying and explaining the experiments and results.
