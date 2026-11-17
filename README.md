@@ -75,8 +75,4 @@ AI101-ML-Assignment-70177771/
 - LightGBM
 ```
 
-Commit summary:
 
-```text
-Update README with A1 and B3 details
-```
