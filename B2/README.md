@@ -82,6 +82,5 @@ The raw file contains **10,016 exact duplicate reviews**. Without de-duplication
 
 - `B2_notebook.ipynb`: Executed Google Colab / Jupyter notebook containing all code, tables, and embedded plots.
 - `report/70177771_B2_Report.pdf`: 2-page double-column IEEE report.
-- `Task_B2_Complete_Project_Guide_Roman_Urdu.pdf`: Complete step-by-step project guide and viva handbook in Roman Urdu and simple English.
 - `figures/`: High-resolution figures generated during EDA, modeling, and ablation.
 - `data/README.md`: Instructions for downloading and placing the dataset.
