@@ -23,7 +23,6 @@ This repository contains an end-to-end applied machine learning portfolio implem
 2. **Mixed Modality** (Structured Tabular + Unstructured Natural Language Text)
 3. **Unstructured Sequence-to-Sequence Modality** (Multimodal Deep Learning: Image → Text)
 
-Every task includes an executed Google Colab / Jupyter notebook, publication-grade figures, a 2-page double-column scientific report formatted to IEEE conference standards, a dedicated Roman Urdu project & viva handbook, and complete documentation.
 
 ---
 
@@ -32,10 +31,10 @@ Every task includes an executed Google Colab / Jupyter notebook, publication-gra
 | Task ID | Task Title | Modality & Setting | Benchmark Models | Primary Metric & Best Result | Deliverables |
 | :---: | :--- | :--- | :--- | :--- | :---: |
 | **A1** | **Breast Cancer Diagnosis** | Numerical Tabular<br/>*(Binary Classification)* | Logistic Regression, RBF-SVM, Random Forest | **Recall (Malignant):** 92.86%<br/>**ROC-AUC:** 0.993 *(SVM)* | [Notebook](A1/A1/A1-Notebook.ipynb) • [Report](A1/report/70177771_A1_Report.pdf) |
-| **A2** | **Concrete Compressive Strength** | Numerical Tabular<br/>*(Supervised Regression)* | Linear Regression, Poly + Ridge, Random Forest, **Gradient Boosting**, MLPRegressor | **Test R²:** 0.9277 (92.8%)<br/>**Test RMSE:** 4.31 MPa *(GB)* | [Notebook](A2/A2_notebook.ipynb) • [Report](A2/report/70177771_A2_Report.pdf) • [Roman Urdu Guide](A2/Task_A2_Complete_Project_Guide_Roman_Urdu.pdf) |
-| **A3** | **Dry Bean Variety Classification** | Numerical Tabular<br/>*(7-Class Classification)* | Logistic Regression, **RBF-SVM**, Random Forest, Gradient Boosting, MLP | **Test Accuracy:** 92.56%<br/>**Macro-F1:** 0.9360 *(SVM)* | [Notebook](A3/A3_notebook.ipynb) • [Report](A3/report/70177771_A3_Report.pdf) • [Roman Urdu Guide](A3/Task_A3_Complete_Project_Guide_Roman_Urdu.pdf) |
-| **B1** | **Fraudulent Job Postings** | Mixed Modality<br/>*(Tabular + TF-IDF NLP)* | **Logistic Regression**, Linear SVM, Random Forest | **Fraud F1:** 0.7958<br/>**PR-AUC:** 0.8770 • **Recall:** 86.92% | [Notebook](B1/B1_notebook.ipynb) • [Report](B1/report/70177771_B1_Report.pdf) • [Roman Urdu Guide](B1/Task_B1_Complete_Project_Guide_Roman_Urdu.pdf) |
-| **B2** | **Wine Critic Score Prediction** | Mixed Modality<br/>*(Tabular + TF-IDF Regression)* | Mean Baseline, SGDRegressor, **Ridge Regression** | **Test R²:** 0.7689 (76.9%)<br/>**Test MAE:** 1.164 points *(Ridge)* | [Notebook](B2/B2_notebook.ipynb) • [Report](B2/report/70177771_B2_Report.pdf) • [Roman Urdu Guide](B2/Task_B2_Complete_Project_Guide_Roman_Urdu.pdf) |
+| **A2** | **Concrete Compressive Strength** | Numerical Tabular<br/>*(Supervised Regression)* | Linear Regression, Poly + Ridge, Random Forest, **Gradient Boosting**, MLPRegressor | **Test R²:** 0.9277 (92.8%)<br/>**Test RMSE:** 4.31 MPa *(GB)* | [Notebook](A2/A2_notebook.ipynb) • [Report](A2/report/70177771_A2_Report.pdf) |
+| **A3** | **Dry Bean Variety Classification** | Numerical Tabular<br/>*(7-Class Classification)* | Logistic Regression, **RBF-SVM**, Random Forest, Gradient Boosting, MLP | **Test Accuracy:** 92.56%<br/>**Macro-F1:** 0.9360 *(SVM)* | [Notebook](A3/A3_notebook.ipynb) • [Report](A3/report/70177771_A3_Report.pdf) |
+| **B1** | **Fraudulent Job Postings** | Mixed Modality<br/>*(Tabular + TF-IDF NLP)* | **Logistic Regression**, Linear SVM, Random Forest | **Fraud F1:** 0.7958<br/>**PR-AUC:** 0.8770 • **Recall:** 86.92% | [Notebook](B1/B1_notebook.ipynb) • [Report](B1/report/70177771_B1_Report.pdf) |
+| **B2** | **Wine Critic Score Prediction** | Mixed Modality<br/>*(Tabular + TF-IDF Regression)* | Mean Baseline, SGDRegressor, **Ridge Regression** | **Test R²:** 0.7689 (76.9%)<br/>**Test MAE:** 1.164 points *(Ridge)* | [Notebook](B2/B2_notebook.ipynb) • [Report](B2/report/70177771_B2_Report.pdf) |
 | **B3** | **Clothing Review Ratings** | Mixed Modality<br/>*(Tabular + TF-IDF NLP)* | Multinomial LR, Linear SVM, Random Forest, **LightGBM** *(Balanced)* | **Macro-F1 (3-Class):** 61.44%<br/>**Accuracy (3-Class):** 79.45% | [Notebook](B3/Task_B3_AI_Assignment.ipynb) • [Report](B3/70177771_B3_Report_3class_updated.pdf) |
 | **C3** | **Image Captioning on Flickr8k** | Multimodal Seq2Seq<br/>*(Vision + LSTM NLP)* | ResNet50 + LSTM vs.<br/>**EfficientNet-B0 + LSTM** | **BLEU-1:** 60.81%<br/>**BLEU-4:** 18.79% *(Beam k=5)* | [Notebook](C3/Task_C3_AI_Assignment.ipynb) • [Report](C3/70177771-C3-Report.pdf.pdf) |
 
@@ -50,28 +49,28 @@ Every task includes an executed Google Colab / Jupyter notebook, publication-gra
   - **Best Model:** Ridge Regression (alpha=5.0) achieved **R² = 0.7689 (76.9% explained variance)**, **MAE = 1.164 points**, and **RMSE = 1.476 points**.
   - **Ablation Study:** Tasting notes add an extraordinary **+18.89% explained variance** beyond price and origin metadata (R² jumps from 0.5800 to 0.7689).
   - **Regression to the Mean:** Middle-tier reviews (85–89 points) achieve lowest error (MAE = 1.027), while extreme high-tier reviews (95–100 points) exhibit highest error (MAE = 2.048) due to L2 regularization shrinkage toward the population mean (88.44 points).
-- **Deliverables:** [Executed Notebook](B2/B2_notebook.ipynb) | [IEEE 2-Page Report](B2/report/70177771_B2_Report.pdf) | [Roman Urdu Guide](B2/Task_B2_Complete_Project_Guide_Roman_Urdu.pdf)
+- **Deliverables:** [Executed Notebook](B2/B2_notebook.ipynb) | [IEEE 2-Page Report](B2/report/70177771_B2_Report.pdf)
 
 ---
 
 ### Task B1: Detecting Fraudulent Job Postings (Pool B — Mixed Modality Classification)
 - **Objective:** Detect deceptive online recruitment advertisements using 17,880 postings from the EMSCAD dataset (4.84% scam prevalence).
 - **Key Results:** Logistic Regression (Threshold 0.66) attained **Fraud F1 = 0.7958**, **PR-AUC = 0.8770**, and intercepted **86.92% of scams (113/130)** on the test set. Modality fusion lifted scam recall by +4.61% over text alone.
-- **Deliverables:** [Executed Notebook](B1/B1_notebook.ipynb) | [IEEE 2-Page Report](B1/report/70177771_B1_Report.pdf) | [Roman Urdu Guide](B1/Task_B1_Complete_Project_Guide_Roman_Urdu.pdf)
+- **Deliverables:** [Executed Notebook](B1/B1_notebook.ipynb) | [IEEE 2-Page Report](B1/report/70177771_B1_Report.pdf)
 
 ---
 
 ### Task A3: Multi-Class Variety Classification of Dry Beans (Pool A — Numerical)
 - **Objective:** Classify 13,611 dry bean specimens into 7 commercial varieties using 16 morphological and shape descriptors.
 - **Key Results:** Support Vector Machine (RBF kernel, C=10.0) achieved **92.56% Test Accuracy** and **0.9360 Macro-F1**. PCA dimensionality reduction to 8 components retains 100% of peak Macro-F1.
-- **Deliverables:** [Executed Notebook](A3/A3_notebook.ipynb) | [IEEE 2-Page Report](A3/report/70177771_A3_Report.pdf) | [Roman Urdu Guide](A3/Task_A3_Complete_Project_Guide_Roman_Urdu.pdf)
+- **Deliverables:** [Executed Notebook](A3/A3_notebook.ipynb) | [IEEE 2-Page Report](A3/report/70177771_A3_Report.pdf)
 
 ---
 
 ### Task A2: Predicting Concrete Compressive Strength (Pool A — Numerical)
 - **Objective:** Predict 28-day concrete compressive strength (MPa) from 8 mixture component densities and curing age.
 - **Key Results:** Gradient Boosting Regressor achieved **R² = 0.9277 (92.8%)** and **RMSE = 4.31 MPa**. Civil engineering feature engineering raised linear model fidelity by +20.5%.
-- **Deliverables:** [Executed Notebook](A2/A2_notebook.ipynb) | [IEEE 2-Page Report](A2/report/70177771_A2_Report.pdf) | [Roman Urdu Guide](A2/Task_A2_Complete_Project_Guide_Roman_Urdu.pdf)
+- **Deliverables:** [Executed Notebook](A2/A2_notebook.ipynb) | [IEEE 2-Page Report](A2/report/70177771_A2_Report.pdf)
 
 ---
 
@@ -106,25 +105,21 @@ Every task includes an executed Google Colab / Jupyter notebook, publication-gra
 │   ├── A2_notebook.ipynb                 # Executed Google Colab notebook
 │   ├── figures/                          # 6 High-resolution publication plots
 │   ├── report/70177771_A2_Report.pdf     # 2-page IEEE report
-│   ├── Task_A2_Complete_Project_Guide_Roman_Urdu.pdf # Roman Urdu Project Guide
 │   └── README.md                         # Task overview & engineering analysis
 ├── A3/                                   # Task A3: Dry Bean Variety Classification
 │   ├── A3_notebook.ipynb                 # Executed Google Colab notebook
 │   ├── figures/                          # 6 High-resolution publication plots
 │   ├── report/70177771_A3_Report.pdf     # 2-page IEEE report
-│   ├── Task_A3_Complete_Project_Guide_Roman_Urdu.pdf # Roman Urdu Project Guide
 │   └── README.md                         # Task overview & engineering analysis
 ├── B1/                                   # Task B1: Fraudulent Job Postings Detection
 │   ├── B1_notebook.ipynb                 # Executed Google Colab notebook
 │   ├── figures/                          # 6 High-resolution publication plots
 │   ├── report/70177771_B1_Report.pdf     # 2-page IEEE report
-│   ├── Task_B1_Complete_Project_Guide_Roman_Urdu.pdf # Roman Urdu Project Guide
 │   └── README.md                         # Task overview & ablation analysis
 ├── B2/                                   # Task B2: Wine Critic Score Prediction
 │   ├── B2_notebook.ipynb                 # Executed Google Colab notebook
 │   ├── figures/                          # 6 High-resolution publication plots
 │   ├── report/70177771_B2_Report.pdf     # 2-page IEEE report
-│   ├── Task_B2_Complete_Project_Guide_Roman_Urdu.pdf # Roman Urdu Project Guide
 │   └── README.md                         # Task overview & ablation analysis
 ├── B3/                                   # Task B3: Clothing Reviews Mixed Modality
 │   ├── Task_B3_AI_Assignment.ipynb       # Executed notebook
