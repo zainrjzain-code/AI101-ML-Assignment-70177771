@@ -72,6 +72,5 @@ This project implements mixed-modality machine learning architectures combining 
 
 - `B1_notebook.ipynb`: Executed Google Colab / Jupyter notebook containing all code, outputs, and embedded figures.
 - `report/70177771_B1_Report.pdf`: 2-page double-column IEEE report.
-- `Task_B1_Complete_Project_Guide_Roman_Urdu.pdf`: Complete step-by-step project guide and viva handbook in Roman Urdu and simple English.
 - `figures/`: High-resolution figures generated during EDA, modeling, and ablation.
 - `data/README.md`: Instructions for downloading and placing the dataset.
