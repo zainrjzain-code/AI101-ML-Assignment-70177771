@@ -72,6 +72,5 @@ The full model achieves a Macro-F1 of 0.9360. 98% of this value is 0.9173.
 
 - `A3_notebook.ipynb`: Fully executed Google Colab / Jupyter notebook containing all code, tables, and embedded plots.
 - `report/70177771_A3_Report.pdf`: 2-page double-column IEEE report.
-- `Task_A3_Complete_Project_Guide_Roman_Urdu.pdf`: Complete step-by-step project guide and viva handbook in Roman Urdu and simple English.
 - `figures/`: High-resolution figures generated during EDA, modeling, and dimensionality reduction.
 - `data/README.md`: Instructions for downloading and placing the dataset.
