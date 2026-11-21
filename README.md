@@ -18,6 +18,24 @@ This task classifies breast tumors as benign or malignant using machine learning
 
 **Techniques:** Exploratory Data Analysis, preprocessing and feature scaling, hyperparameter tuning, stratified 5-fold cross-validation, model evaluation, threshold analysis, and feature importance.
 
+
+### A2 - Predicting Concrete Compressive Strength
+
+This task predicts concrete compressive strength (in MPa) from mixture component formulations and sample curing age using regression models.
+
+**Models:** Linear Regression (baseline), Polynomial + Ridge Regression, Random Forest Regressor, Gradient Boosting Regressor, and Multi-Layer Perceptron (MLPRegressor).
+
+**Techniques:** Exploratory Data Analysis, feature skewness inspection, domain-driven feature engineering (water-to-cement ratio and logarithmic curing age), zero-leakage pipeline scaling, 5-fold cross-validation hyperparameter tuning, homoscedasticity residual diagnostics, and permutation feature importance.
+
+**Feature Engineering Impact:** Improved baseline Linear Regression $R^2$ from 0.6276 to 0.8329 (+20.5% explained variance).
+
+**Selected Best Model:** Gradient Boosting Regressor ($R^2 = 0.9277$, $\text{RMSE} = 4.31\text{ MPa}$, $\text{MAE} = 2.85\text{ MPa}$, 5-Fold CV $\text{RMSE} = 4.69 \pm 0.37\text{ MPa}$).
+
+- [A2 notebook](A2/A2_notebook.ipynb)
+- [A2 report](A2/report/70177771_A2_Report.pdf)
+- [A2 dataset instructions](A2/data/README.md)
+- [A2 figures](A2/figures/)
+
 ### B3 - Clothing Review Ratings
 
 This task predicts clothing review ratings from review text and customer and product information. The five-class task predicts ratings from 1 to 5. The three-class task groups ratings as Negative (1-2), Neutral (3), and Positive (4-5).
@@ -80,6 +98,15 @@ AI101-ML-Assignment-70177771/
 │   ├── report/
 │   │   └── 70177771_A1_Report.pdf
 │   └── A1_notebook.ipynb
+│
+├── A2/
+│   ├── data/
+│   │   └── README.md
+│   ├── figures/
+│   ├── report/
+│   │   └── 70177771_A2_Report.pdf
+│   ├── A2_notebook.ipynb
+│   └── README.md
 │
 ├── B3/
 │   ├── data/
