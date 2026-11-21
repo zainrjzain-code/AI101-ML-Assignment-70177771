@@ -22,10 +22,10 @@ In compliance with the University of Lahore AI-101 course policy on Artificial I
   - GitHub automated multi-commit synchronization.
 
 ### 2. Nature of Human Contribution & Verification
-- **Problem Formulation:** All experimental setups (Task A1, Task A2, Task A3, Task B3, Task C3) were formulated in accordance with the official course assignment specifications.
+- **Problem Formulation:** All experimental setups (Task A1, Task A2, Task A3, Task B1, Task B3, Task C3) were formulated in accordance with the official course assignment specifications.
 - **Data Integrity & Preprocessing:** Data hygiene, split stratification, and strict zero-leakage pipeline boundaries (fitting transformers exclusively on training partitions) were architected and verified.
-- **Model Evaluation:** All performance metrics (R², RMSE, MAE, Accuracy, Macro Precision, Macro Recall, Macro F1, Weighted F1, BLEU scores) were generated via live code execution and cross-validated. No synthetic or fabricated metrics were used.
-- **Scientific Analysis:** Domain interpretations (e.g., water-cement ratio impact on concrete, morphological confusion between Dermason and Sira varieties, PCA dimensionality trade-offs) were thoroughly analyzed and verified.
+- **Model Evaluation:** All performance metrics (R², RMSE, MAE, Accuracy, Macro Precision, Macro Recall, Macro F1, Weighted F1, PR-AUC, ROC-AUC, BLEU scores) were generated via live code execution and cross-validated. No synthetic or fabricated metrics were used.
+- **Scientific Analysis:** Domain interpretations (e.g., water-cement ratio impact on concrete, morphological confusion between Dermason and Sira varieties, modality ablation in employment scams) were thoroughly analyzed and verified.
 
 ---
 
