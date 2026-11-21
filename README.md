@@ -42,28 +42,10 @@ This repository contains an end-to-end applied machine learning portfolio implem
 
 ## Detailed Task Summaries
 
-### Task B2: Predicting Wine Critic Scores (Pool B — Mixed Modality Regression)
-- **Objective:** Predict sommelier ratings (points 80–100) from 129,971 wine reviews using bottle pricing, origin, grape variety, and natural language tasting notes.
-- **Data Hygiene:** Eliminated 10,016 exact duplicate tasting notes (7.71%) prior to 80/10/10 data splitting to prevent direct train-test leakage.
-- **Key Results:**
-  - **Best Model:** Ridge Regression (alpha=5.0) achieved **R² = 0.7689 (76.9% explained variance)**, **MAE = 1.164 points**, and **RMSE = 1.476 points**.
-  - **Ablation Study:** Tasting notes add an extraordinary **+18.89% explained variance** beyond price and origin metadata (R² jumps from 0.5800 to 0.7689).
-  - **Regression to the Mean:** Middle-tier reviews (85–89 points) achieve lowest error (MAE = 1.027), while extreme high-tier reviews (95–100 points) exhibit highest error (MAE = 2.048) due to L2 regularization shrinkage toward the population mean (88.44 points).
-- **Deliverables:** [Executed Notebook](B2/B2_notebook.ipynb) | [IEEE 2-Page Report](B2/report/70177771_B2_Report.pdf)
-
----
-
-### Task B1: Detecting Fraudulent Job Postings (Pool B — Mixed Modality Classification)
-- **Objective:** Detect deceptive online recruitment advertisements using 17,880 postings from the EMSCAD dataset (4.84% scam prevalence).
-- **Key Results:** Logistic Regression (Threshold 0.66) attained **Fraud F1 = 0.7958**, **PR-AUC = 0.8770**, and intercepted **86.92% of scams (113/130)** on the test set. Modality fusion lifted scam recall by +4.61% over text alone.
-- **Deliverables:** [Executed Notebook](B1/B1_notebook.ipynb) | [IEEE 2-Page Report](B1/report/70177771_B1_Report.pdf)
-
----
-
-### Task A3: Multi-Class Variety Classification of Dry Beans (Pool A — Numerical)
-- **Objective:** Classify 13,611 dry bean specimens into 7 commercial varieties using 16 morphological and shape descriptors.
-- **Key Results:** Support Vector Machine (RBF kernel, C=10.0) achieved **92.56% Test Accuracy** and **0.9360 Macro-F1**. PCA dimensionality reduction to 8 components retains 100% of peak Macro-F1.
-- **Deliverables:** [Executed Notebook](A3/A3_notebook.ipynb) | [IEEE 2-Page Report](A3/report/70177771_A3_Report.pdf)
+### Task A1: Breast Cancer Diagnosis (Pool A — Numerical)
+- **Objective:** Diagnostic binary classification of breast mass biopsies (Malignant vs. Benign).
+- **Key Results:** Support Vector Machine (RBF) achieved 92.86% Malignant Recall and 0.993 ROC-AUC.
+- **Deliverables:** [Notebook](A1/A1/A1-Notebook.ipynb) | [IEEE 2-Page Report](A1/report/70177771_A1_Report.pdf)
 
 ---
 
@@ -74,10 +56,28 @@ This repository contains an end-to-end applied machine learning portfolio implem
 
 ---
 
-### Task A1: Breast Cancer Diagnosis (Pool A — Numerical)
-- **Objective:** Diagnostic binary classification of breast mass biopsies (Malignant vs. Benign).
-- **Key Results:** Support Vector Machine (RBF) achieved 92.86% Malignant Recall and 0.993 ROC-AUC.
-- **Deliverables:** [Notebook](A1/A1/A1-Notebook.ipynb) | [IEEE 2-Page Report](A1/report/70177771_A1_Report.pdf)
+### Task A3: Multi-Class Variety Classification of Dry Beans (Pool A — Numerical)
+- **Objective:** Classify 13,611 dry bean specimens into 7 commercial varieties using 16 morphological and shape descriptors.
+- **Key Results:** Support Vector Machine (RBF kernel, C=10.0) achieved **92.56% Test Accuracy** and **0.9360 Macro-F1**. PCA dimensionality reduction to 8 components retains 100% of peak Macro-F1.
+- **Deliverables:** [Executed Notebook](A3/A3_notebook.ipynb) | [IEEE 2-Page Report](A3/report/70177771_A3_Report.pdf)
+
+---
+
+### Task B1: Detecting Fraudulent Job Postings (Pool B — Mixed Modality Classification)
+- **Objective:** Detect deceptive online recruitment advertisements using 17,880 postings from the EMSCAD dataset (4.84% scam prevalence).
+- **Key Results:** Logistic Regression (Threshold 0.66) attained **Fraud F1 = 0.7958**, **PR-AUC = 0.8770**, and intercepted **86.92% of scams (113/130)** on the test set. Modality fusion lifted scam recall by +4.61% over text alone.
+- **Deliverables:** [Executed Notebook](B1/B1_notebook.ipynb) | [IEEE 2-Page Report](B1/report/70177771_B1_Report.pdf)
+
+---
+
+### Task B2: Predicting Wine Critic Scores (Pool B — Mixed Modality Regression)
+- **Objective:** Predict sommelier ratings (points 80–100) from 129,971 wine reviews using bottle pricing, origin, grape variety, and natural language tasting notes.
+- **Data Hygiene:** Eliminated 10,016 exact duplicate tasting notes (7.71%) prior to 80/10/10 data splitting to prevent direct train-test leakage.
+- **Key Results:**
+  - **Best Model:** Ridge Regression (alpha=5.0) achieved **R² = 0.7689 (76.9% explained variance)**, **MAE = 1.164 points**, and **RMSE = 1.476 points**.
+  - **Ablation Study:** Tasting notes add an extraordinary **+18.89% explained variance** beyond price and origin metadata (R² jumps from 0.5800 to 0.7689).
+  - **Regression to the Mean:** Middle-tier reviews (85–89 points) achieve lowest error (MAE = 1.027), while extreme high-tier reviews (95–100 points) exhibit highest error (MAE = 2.048) due to L2 regularization shrinkage toward the population mean (88.44 points).
+- **Deliverables:** [Executed Notebook](B2/B2_notebook.ipynb) | [IEEE 2-Page Report](B2/report/70177771_B2_Report.pdf)
 
 ---
 
