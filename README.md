@@ -17,7 +17,7 @@
 
 ---
 
-## 📌 Graded & Bonus Tasks Declaration
+## Graded and Bonus Tasks Declaration
 As specified in **Section 11 & Section 12 (Bonus Policy)** of the assignment prompt, students who complete all nine tasks and submit nine formal two-page reports earn up to **+5 bonus marks**.
 
 - **Three Primary Graded Tasks (1 per pool):**
@@ -34,25 +34,25 @@ As specified in **Section 11 & Section 12 (Bonus Policy)** of the assignment pro
 
 ---
 
-## 📊 Summary of the Nine Tasks
+## Summary of the Nine Tasks
 
 | Pool | ID | Task Name | Modality | Dataset | Primary Metric | Winning Model | Notebook | Report PDF | Figures | Data Guide |
 | :---: | :---: | :--- | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | **A** | **A1** | Breast Cancer Diagnosis | Numerical | UCI Breast Cancer (Diagnostic) | Recall, F1, ROC-AUC | Random Forest (Tuned) | [Notebook](A1/A1_notebook.ipynb) | [Report](A1/report/70177771_A1_Report.pdf) | [Figures](A1/figures/) | [Data README](A1/data/README.md) |
-| **A** | **A2** ⭐ | Concrete Compressive Strength | Numerical | UCI Concrete Strength | RMSE, MAE, $R^2$ | Gradient Boosting ($R^2=0.934$) | [Notebook](A2/A2_notebook.ipynb) | [Report](A2/report/70177771_A2_Report.pdf) | [Figures](A2/figures/) | [Data README](A2/data/README.md) |
+| **A** | **A2** *(Graded)* | Concrete Compressive Strength | Numerical | UCI Concrete Strength | RMSE, MAE, $R^2$ | Gradient Boosting ($R^2=0.934$) | [Notebook](A2/A2_notebook.ipynb) | [Report](A2/report/70177771_A2_Report.pdf) | [Figures](A2/figures/) | [Data README](A2/data/README.md) |
 | **A** | **A3** | Dry Bean Variety Recognition | Numerical | UCI Dry Bean (7 Classes) | Macro-F1, Accuracy | MLP ($F_1=0.9388$, Acc=$94.07\%$) | [Notebook](A3/A3_notebook.ipynb) | [Report](A3/report/70177771_A3_Report.pdf) | [Figures](A3/figures/) | [Data README](A3/data/README.md) |
 | **B** | **B1** | Fraudulent Job Postings | Tabular + Text | EMSCAD (17.8k Postings) | F1 (Fraud), PR-AUC | LightGBM ($F_1=0.7818$, PR=$0.835$) | [Notebook](B1/B1_notebook.ipynb) | [Report](B1/report/70177771_B1_Report.pdf) | [Figures](B1/figures/) | [Data README](B1/data/README.md) |
-| **B** | **B2** ⭐ | Wine Critic-Score Prediction | Tabular + Text | Wine Reviews (130k) | MAE, RMSE, $R^2$ | LightGBM ($R^2=0.7411$, MAE=$1.28$) | [Notebook](B2/B2_notebook.ipynb) | [Report](B2/report/70177771_B2_Report.pdf) | [Figures](B2/figures/) | [Data README](B2/data/README.md) |
+| **B** | **B2** *(Graded)* | Wine Critic-Score Prediction | Tabular + Text | Wine Reviews (130k) | MAE, RMSE, $R^2$ | LightGBM ($R^2=0.7411$, MAE=$1.28$) | [Notebook](B2/B2_notebook.ipynb) | [Report](B2/report/70177771_B2_Report.pdf) | [Figures](B2/figures/) | [Data README](B2/data/README.md) |
 | **B** | **B3** | Clothing Review Star Ratings | Tabular + Text | Women's E-Commerce | Macro-F1, Ordinal MAE | LightGBM ($F_1=0.5478$, MAE=$0.428$) | [Notebook](B3/B3_notebook.ipynb) | [Report](B3/report/70177771_B3_Report.pdf) | [Figures](B3/figures/) | [Data README](B3/data/README.md) |
-| **C** | **C1** ⭐ | English $\rightarrow$ Urdu Translation | Seq2Seq (Text $\rightarrow$ Text) | OPUS-100 (Cleaned) | sacreBLEU, chrF | MarianMT ($BLEU=24.12$, $chrF=48.2$) | [Notebook](C1/C1_notebook.ipynb) | [Report](C1/report/70177771_C1_Report.pdf) | [Figures](C1/figures/) | [Data README](C1/data/README.md) |
+| **C** | **C1** *(Graded)* | English $\rightarrow$ Urdu Translation | Seq2Seq (Text $\rightarrow$ Text) | OPUS-100 (Cleaned) | sacreBLEU, chrF | MarianMT ($BLEU=24.12$, $chrF=48.2$) | [Notebook](C1/C1_notebook.ipynb) | [Report](C1/report/70177771_C1_Report.pdf) | [Figures](C1/figures/) | [Data README](C1/data/README.md) |
 | **C** | **C2** | Abstractive News Summarisation | Seq2Seq (Text $\rightarrow$ Text) | BBC XSum (20k Subset) | ROUGE-1/2/L | Fine-tuned T5-Small ($R_1=29.35$) | [Notebook](C2/C2_notebook.ipynb) | [Report](C2/report/70177771_C2_Report.pdf) | [Figures](C2/figures/) | [Data README](C2/data/README.md) |
 | **C** | **C3** | Image Captioning | Seq2Seq (Image $\rightarrow$ Text) | Flickr8k (8k Images) | Corpus BLEU-1..4 | EfficientNet-B0 + LSTM ($B_4=18.40$) | [Notebook](C3/C3_notebook.ipynb) | [Report](C3/report/70177771_C3_Report.pdf) | [Figures](C3/figures/) | [Data README](C3/data/README.md) |
 
-*(⭐ indicates the three primary graded tasks submitted for the 30-mark core assessment).*
+*("Graded" indicates the three primary graded tasks submitted for the 30-mark core assessment).*
 
 ---
 
-## 🏛 Rigorous Engineering Standards
+## Rigorous Engineering Standards
 Across all nine tasks, the following machine learning hygiene principles are strictly enforced:
 1. **Zero Data Leakage:** All scalers (`StandardScaler`, `MinMaxScaler`), text vectorizers (`TfidfVectorizer`), and imputers are enclosed inside `sklearn.pipeline.Pipeline` or `sklearn.compose.ColumnTransformer` and fitted exclusively on training splits.
 2. **Deterministic Reproducibility:** Global random seeds (`random_state=42` / `torch.manual_seed(42)`) are explicitly fixed for NumPy, Scikit-Learn, and PyTorch.
@@ -61,7 +61,7 @@ Across all nine tasks, the following machine learning hygiene principles are str
 
 ---
 
-## 🚀 Environment Setup & Quickstart
+## Environment Setup and Quickstart
 
 ### 1. Clone Repository
 ```bash
@@ -93,7 +93,7 @@ Or open directly in Google Colab via the badges provided in each task folder's R
 
 ---
 
-## 📄 AI Use Disclosure
+## AI Use Disclosure
 As required by **Section 7** of the assignment guidelines, full disclosure of AI assistance is documented in [AI_DISCLOSURE.md](AI_DISCLOSURE.md) and appended to each submitted report.
 
 ---

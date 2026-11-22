@@ -20,7 +20,7 @@
 | `Department Name` | Categorical | Store department (e.g., Tops, Dresses) | One-Hot Encoded |
 | `Class Name` | Categorical | Detailed garment category | One-Hot Encoded |
 
-## ⚠️ Critical Data Leakage Rule
+##  Critical Data Leakage Rule
 As specified in the assignment prompt:
 > **Leakage rule:** Do not use the column `Recommended IND` as an input. The same customer fills it in at the same moment as the rating, so it would not be available when you need the prediction.
 
