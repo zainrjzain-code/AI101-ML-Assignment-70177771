@@ -6,3 +6,10 @@ scikit-learn
 lightgbm
 scipy
 reportlab
+torch
+transformers
+datasets
+evaluate
+sacrebleu
+rouge-score
+nltk
