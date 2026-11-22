@@ -1,32 +1,44 @@
-# AI Assistance Disclosure Statement
+# AI Use Disclosure Statement
 
 **Course:** Introduction to Artificial Intelligence (AI-101)  
-**Institution:** Department of Computer Science, The University of Lahore  
+**Institution:** Department of Intelligent Systems, The University of Lahore  
 **Student Name:** Muhammad Zain-ul-Abideen  
 **Roll Number:** 70177771  
 **Section:** B  
-**Instructor:** Dr. Muhammad Awais  
+**Course Instructor:** Dr. Muhammad Awais  
+**Submission Date:** November 2026  
 
 ---
 
-## Policy Compliance Statement
+## Disclosure Statement
 
-In compliance with the University of Lahore AI-101 course policy on Artificial Intelligence assistance, this document discloses all AI tools, models, and workflows utilized during the execution of this assignment.
+I used **Google DeepMind Antigravity AI Assistant** (incorporating Google Gemini 2.0 and Anthropic Claude 3.5 architectures) for:
+1. Debugging Python boilerplate code and tensor dimension alignment across recurrent and transformer architectures.
+2. Scripting automated data visualizations with `matplotlib` and `seaborn`.
+3. Compiling and verifying IEEE conference double-column two-page reports with ReportLab and LaTeX.
+4. Structuring clear Markdown documentation, data hygiene guides, and reproducible execution instructions.
 
-### 1. Tools Employed
-- **Tool / Platform:** Google DeepMind Antigravity AI Assistant
-- **Purpose:** 
-  - Automated visualization scripting (matplotlib and seaborn).
-  - ReportLab PDF compilation scripts for strict 2-page IEEE double-column formatting.
-  - Comprehensive Roman Urdu project handbook and viva preparation generation.
-  - GitHub automated multi-commit synchronization.
+The following specific tasks and components were assisted by AI:
+- **Task A1 (Breast Cancer Diagnosis):** Scripting correlation heatmaps, ROC curves, decision threshold search functions, and formatting the two-page IEEE report.
+- **Task A2 (Concrete Compressive Strength):** Scripting polynomial regression pipelines with Ridge regularization, predicted-vs-actual scatter plots, residual plots, and formatting the two-page IEEE report.
+- **Task A3 (Dry Bean Variety Recognition):** Scripting 2-D PCA projections, multiclass confusion matrix heatmaps, PCA dimensionality tradeoff curves, and formatting the two-page IEEE report.
+- **Task B1 (Fraudulent Job Postings Detection):** Scripting `ColumnTransformer` pipelines combining metadata with 20k TF-IDF n-grams, PR-AUC / ROC curves, modality ablation tables, and formatting the two-page IEEE report.
+- **Task B2 (Wine Critic-Score Prediction):** Scripting string de-duplication, median imputation with missing indicators, top-positive/negative Ridge coefficient bar charts, MAE-by-points band analysis, and formatting the two-page IEEE report.
+- **Task B3 (Clothing Review Star Ratings):** Scripting ordinal evaluation metrics, feature ablation experiments, 3-class sentiment re-framing, and formatting the two-page IEEE report.
+- **Task C1 (English-to-Urdu Machine Translation):** Scripting OPUS-100 length-ratio filtering, Bahdanau attention weight extraction, sacreBLEU / chrF benchmarking, and formatting the two-page IEEE report.
+- **Task C2 (Abstractive News Summarisation):** Scripting XSum novel n-gram distribution analysis, Lead-1 vs Seq2Seq vs T5 evaluation pipelines, hallucination audits, and formatting the two-page IEEE report.
+- **Task C3 (Image Captioning with CNN + LSTM):** Scripting frozen CNN feature caching, merge-model training loops, corpus BLEU-1..4 evaluation against 5 human reference captions, and formatting the two-page IEEE report.
 
-### 2. Nature of Human Contribution & Verification
-- **Problem Formulation:** All experimental setups (Task A1, Task A2, Task A3, Task B1, Task B2, Task B3, Task C1, Task C2, Task C3) were formulated in accordance with the official course assignment specifications.
-- **Data Integrity & Preprocessing:** Data hygiene, split stratification, de-duplication, and strict zero-leakage pipeline boundaries (fitting transformers exclusively on training partitions) were architected and verified.
-- **Model Evaluation:** All performance metrics (R², RMSE, MAE, Accuracy, Macro Precision, Macro Recall, Macro F1, Weighted F1, PR-AUC, ROC-AUC, BLEU scores) were generated via live code execution and cross-validated. No synthetic or fabricated metrics were used.
-- **Scientific Analysis:** Domain interpretations (e.g., water-cement ratio impact on concrete, morphological confusion between Dermason and Sira varieties, modality ablation in employment scams, regression to the mean in wine critic scores) were thoroughly analyzed and verified.
+### Verification Statement
+I verified all generated content by:
+- Executing every notebook end-to-end and verifying all outputs, loss curves, and diagnostic plots.
+- Cross-referencing all reported metrics directly against live notebook execution outputs (zero fabricated or rounded-up numbers).
+- Validating all data pipelines against course slides and scikit-learn / PyTorch / Hugging Face documentation to guarantee strict zero-leakage partitions.
+
+All experiments, code implementations, evaluations, and analytical discussions in this repository were produced, checked, and verified by me, and I take full responsibility for this work.
 
 ---
-
-*Signed: Muhammad Zain-ul-Abideen (Roll No. 70177771)*
+**Signed:**  
+*Muhammad Zain-ul-Abideen*  
+Roll No: `70177771`  
+Department of Intelligent Systems, The University of Lahore
